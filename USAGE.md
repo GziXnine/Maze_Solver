@@ -15,10 +15,10 @@
 
 ### Step 3: Solve Maze
 ```bash
-python bfs_solver.py
+python src/Algorithm/bfs_solver.py
 ```
 
-This creates `maze_solution.txt` with the shortest path.
+This reads `src/Algorithm/maze.txt` and writes `src/Algorithm/maze_solution.txt` with the shortest path.
 
 ### Step 4: Share Solution Back
 - Send `maze_solution.txt` back to JavaScript developer
@@ -28,13 +28,13 @@ This creates `maze_solution.txt` with the shortest path.
 ### Step 5: Visualize Solution
 1. Click "📂 Import from TXT"
 2. Load `maze_solution.txt`
-3. The path will be displayed (you can animate this later)
+3. The rat will follow the imported path (animate if you like)
 
 ## Game Controls
 
-- **WASD** - Move rat
-- **Arrow Keys** - Move cat
-- **Goal**: Rat reaches door (D) before cat catches it
+- **Rat**: follows imported BFS path
+- **Cat**: Arrow Keys
+- **Goal**: Rat reaches any door (D) before cat catches it
 
 ## Maze Elements
 

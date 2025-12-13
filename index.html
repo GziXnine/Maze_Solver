@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maze Solver - BFS Pathfinding</title>
+    <title>Maze Arena - Pathfinding Lab</title>
     <link rel="stylesheet" href="src/style.css">
 </head>
 
 <body>
     <div class="container">
-        <!-- Sidebar -->
         <aside class="sidebar">
             <div class="sidebar-header">
                 <h1>🧩 Maze Solver</h1>
@@ -35,13 +34,11 @@
                     </ul>
                 </div>
 
-                <!-- Grid Size -->
                 <div class="control-group">
                     <label>Grid Size</label>
                     <input type="number" id="gridSize" min="10" max="40" value="15" class="input-field">
                 </div>
 
-                <!-- Algorithm Selection -->
                 <div class="control-group">
                     <label>Algorithm</label>
                     <select id="algorithm" class="input-field">
@@ -49,7 +46,6 @@
                     </select>
                 </div>
 
-                <!-- Speed Control -->
                 <div class="control-group">
                     <label>Animation Speed</label>
                     <div class="speed-display">
@@ -58,36 +54,32 @@
                     <input type="range" id="speed" min="1" max="100" value="50" class="slider">
                 </div>
 
-                <!-- Door Count -->
                 <div class="control-group">
-                    <label>Number of Doors</label>
-                    <input type="number" id="doorCount" min="1" max="4" value="3" class="input-field">
+                    <label>Doors</label>
+                    <input type="number" id="doorCount" min="1" max="4" value="2" class="input-field">
                 </div>
 
-                <!-- Trap Count -->
                 <div class="control-group">
-                    <label>Number of Traps</label>
+                    <label>Traps</label>
                     <input type="number" id="trapCount" min="0" max="20" value="10" class="input-field">
                 </div>
 
-                <!-- Action Buttons -->
                 <div class="action-buttons">
                     <button id="generateBtn" class="btn btn-primary">
-                        Generate Maze
+                        <span class="icon">⚡</span> Generate Maze
                     </button>
                     <button id="solveBtn" class="btn btn-success">
-                        Solve
+                        <span class="icon">🧠</span> Solve
                     </button>
-                    <button id="downloadBtn" class="btn btn-download">
-                        Download Image
+                    <button id="downloadBtn" class="btn btn-secondary">
+                        <span class="icon">📸</span> Snapshot
                     </button>
                     <button id="resetBtn" class="btn btn-danger">
-                        Reset
+                        <span class="icon">♻</span> Reset
                     </button>
                 </div>
 
-                <!-- Statistics -->
-                <div class="stats">
+                <div class="stats glass">
                     <div class="stat-item">
                         <span class="stat-label">Path Length</span>
                         <span class="stat-value" id="pathLength">--</span>
@@ -108,7 +100,6 @@
             </div>
         </aside>
 
-        <!-- Main Content -->
         <main class="main-content">
             <div class="maze-container">
                 <div id="mazeGrid" class="maze-grid"></div>
