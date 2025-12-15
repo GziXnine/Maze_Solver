@@ -2,6 +2,12 @@
 
 Maze generation, play, and BFS solving: JavaScript frontend for maze building and play, Python backend for shortest-path solving.
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Completion-85%25-brightgreen" alt="Completion Status">
+  &nbsp;&nbsp;
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=GziXnine/Maze_Solver" alt="Visitors">
+</p>
+
 ## ✨ Highlights
 
 - **Animated maze generation** (recursive backtracking)
